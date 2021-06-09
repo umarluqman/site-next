@@ -84,6 +84,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: { bookmarkList },
+    revalidate: 10,
   };
 };
 
