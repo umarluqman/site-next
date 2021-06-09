@@ -15,7 +15,7 @@ export default function Home(): ReactNode {
   const textColor = useColorModeValue("gray.800", "gray.100");
   return (
     <chakra.div w="full" maxWidth={688} m="0 auto" p={{ base: 4, sm: 0 }}>
-      <Heading mb={4} mt={8} as="h1" size="2xl" textAlign="center">
+      <Heading mb={4} mt={20} as="h1" size="2xl" textAlign="center">
         Umar Luqman
       </Heading>
       <Text color={textColor} textAlign="center">
@@ -33,7 +33,7 @@ export default function Home(): ReactNode {
       >
         FocusMode <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
-      <Text mt={1}>
+      <Text mt={1} color={textColor}>
         No more mindlessly browsing, only access distracting website with a
         careful thought.
       </Text>
@@ -41,7 +41,7 @@ export default function Home(): ReactNode {
       <Heading mb={5} mt={20} as="h2" size="xl">
         What I&apos;m up to now?
       </Heading>
-      <List spacing={3}>
+      <List spacing={3} color={textColor}>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="brand.500" />
           Practising progression exercises to my first muscle-up.
