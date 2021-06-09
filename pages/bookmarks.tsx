@@ -52,7 +52,9 @@ const Bookmarks = ({ bookmarkList }: BookmarkProps) => {
           <Heading size="md" mt={4}>
             {title}
           </Heading>
-          <Text color={dateColor}>{addedAt}</Text>
+          <Text color={dateColor} fontSize="sm">
+            {addedAt}
+          </Text>
         </React.Fragment>
       ))}
     </chakra.div>
@@ -74,7 +76,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const bookmarkList = rows.map(({ _rawData }) => {
     return {
-      addedAt: _rawData[0],
+      addedAt: _rawData[0].split("at")[0],
       title: _rawData[1],
       url: _rawData[3],
     };

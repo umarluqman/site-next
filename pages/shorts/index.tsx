@@ -61,7 +61,9 @@ const Shorts = ({ posts }: ShortsProps) => {
                 _hover={{ textDecoration: "none" }}
               >
                 <Heading size="md">{post.frontMatter.title}</Heading>
-                <Text color={dateColor}>{post.frontMatter.date}</Text>
+                <Text color={dateColor} fontSize="sm">
+                  {post.frontMatter.date}
+                </Text>
 
                 <Text mt={1} color={textColor}>
                   {post.frontMatter.description}
