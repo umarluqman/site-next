@@ -13,6 +13,14 @@ const SEO = {
     title,
     description,
   },
+  images: [
+    {
+      url: "/favicon/android-chrome-512x512.png",
+      width: 512,
+      height: 512,
+      alt: "Umar Luqman",
+    },
+  ],
   twitter: {
     handle: "@umarlqmn",
     site: "@umarlqmn",

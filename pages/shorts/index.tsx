@@ -13,7 +13,7 @@ import matter from "gray-matter";
 import { postFilePaths, POSTS_PATH } from "mdx/utils";
 import { GetStaticProps } from "next";
 import path from "path";
-import React from "react";
+import React, { ReactNode } from "react";
 
 type ShortsProps = {
   posts: {
@@ -22,7 +22,7 @@ type ShortsProps = {
   }[];
 };
 
-const Shorts = ({ posts }: ShortsProps) => {
+const Shorts = ({ posts }: ShortsProps): ReactNode => {
   const textColor = useColorModeValue("gray.800", "gray.100");
 
   const dateColor = useColorModeValue("gray.600", "gray.300");
