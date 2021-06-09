@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev -p 1001",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.13",
@@ -25,6 +26,14 @@
   "devDependencies": {
     "@types/google-spreadsheet": "^3.1.2",
     "@types/react": "^17.0.9",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "typescript": "^4.3.2"
+  },
+  "lint-staged": {
+    "**/*.{js, jsx, ts,tsx}": [
+      "yarn eslint",
+      "yarn prettier --write"
+    ]
   }
 }
