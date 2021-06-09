@@ -15,6 +15,7 @@ import { GoogleSpreadsheet } from "google-spreadsheet";
 type Bookmark = {
   addedAt: string;
   title: string;
+  description?: string;
   url: string;
 };
 
@@ -78,6 +79,7 @@ export const getStaticProps: GetStaticProps = async () => {
     return {
       addedAt: _rawData[0].split("at")[0],
       title: _rawData[1],
+      description: _rawData[2],
       url: _rawData[3],
     };
   });
