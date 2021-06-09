@@ -4,7 +4,7 @@ import { bundleMDX } from "mdx-bundler";
 import { getMDXComponent } from "mdx-bundler/client";
 import { GetStaticPaths, GetStaticProps } from "next";
 import path from "path";
-import React, { useMemo } from "react";
+import React, { ReactNode, useMemo } from "react";
 import {
   chakra,
   Heading,
@@ -19,7 +19,7 @@ type Props = {
   frontMatter: { title: string; description?: string };
 };
 
-export default function PostPage({ code, frontMatter }: Props) {
+export default function PostPage({ code, frontMatter }: Props): ReactNode {
   const Component = useMemo(() => getMDXComponent(code), [code]);
   const textColor = useColorModeValue("gray.800", "gray.100");
 

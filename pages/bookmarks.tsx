@@ -8,7 +8,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
-import React from "react";
+import React, { ReactNode } from "react";
 
 import { GoogleSpreadsheet } from "google-spreadsheet";
 
@@ -22,7 +22,7 @@ type BookmarkProps = {
   bookmarkList: Bookmark[];
 };
 
-const Bookmarks = ({ bookmarkList }: BookmarkProps) => {
+const Bookmarks = ({ bookmarkList }: BookmarkProps): ReactNode => {
   console.log({ bookmarkList });
   const color = useColorModeValue("blue.700", "blue.200");
   const linkColor = useColorModeValue("blue.800", "blue.100");
