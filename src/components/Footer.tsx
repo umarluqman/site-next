@@ -2,7 +2,7 @@ import { chakra } from "@chakra-ui/react";
 import React from "react";
 
 const Footer = () => {
-  return <chakra.footer>foooooooter</chakra.footer>;
+  return <footer></footer>;
 };
 
 export default Footer;
