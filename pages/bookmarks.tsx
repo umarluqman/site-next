@@ -6,6 +6,7 @@ import {
   Text,
   Link as BaseLink,
   useColorModeValue,
+  Link,
 } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import React, { ReactNode } from "react";
@@ -50,9 +51,11 @@ const Bookmarks = ({ bookmarkList }: BookmarkProps): ReactNode => {
 
       {bookmarkList.map(({ title, url, addedAt }) => (
         <React.Fragment key={url}>
-          <Heading size="md" mt={4}>
-            {title}
-          </Heading>
+          <Link href={url} isExternal>
+            <Heading size="md" mt={4}>
+              {title}
+            </Heading>
+          </Link>
           <Text color={dateColor} fontSize="sm">
             {addedAt}
           </Text>
