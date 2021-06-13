@@ -50,6 +50,10 @@ export default function Home(): ReactNode {
           <ListIcon as={CheckCircleIcon} color="brand.500" />
           Finishing this website, yeah I know it&apos;s meta.
         </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="brand.500" />
+          Learning Web 3.0
+        </ListItem>
       </List>
       <Text textAlign="right" mt={4} fontStyle="italic">
         Last updated in 13th June 2021
