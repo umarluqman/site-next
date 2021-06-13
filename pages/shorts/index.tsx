@@ -10,7 +10,7 @@ import {
 import { Link } from "components/Link";
 import fs from "fs";
 import matter from "gray-matter";
-import { postFilePaths, POSTS_PATH } from "mdx/utils";
+import { POSTS_PATH } from "mdx/utils";
 import { GetStaticProps } from "next";
 import path from "path";
 import React, { ReactNode } from "react";
@@ -78,16 +78,22 @@ const Shorts = ({ posts }: ShortsProps): ReactNode => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = postFilePaths.map((filePath) => {
-    const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
-    console.log(postFilePaths);
-    const { data } = matter(source);
+  const dirs = await fs.promises.readdir(POSTS_PATH);
 
-    return {
-      frontMatter: data,
-      filePath,
-    };
-  });
+  const posts = dirs
+    .filter((filename) => filename !== ".DS_Store")
+    .map((filePath) => {
+      const source = fs.readFileSync(
+        path.join(POSTS_PATH, filePath, "index.mdx")
+      );
+
+      const { data } = matter(source);
+
+      return {
+        frontMatter: data,
+        filePath,
+      };
+    });
 
   return { props: { posts } };
 };

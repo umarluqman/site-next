@@ -14,8 +14,8 @@ import matter from "gray-matter";
 import { remarkMdxImages } from "remark-mdx-images";
 import { bundleMDX } from "mdx-bundler";
 import { getMDXComponent } from "mdx-bundler/client";
-import { postFilePaths, POSTS_PATH } from "mdx/utils";
-import { GetStaticPaths, GetStaticProps } from "next";
+import { POSTS_PATH } from "mdx/utils";
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 import path from "path";
 import React, { ReactNode, useMemo } from "react";
 
@@ -65,39 +65,58 @@ export default function PostPage({ code, frontMatter }: Props): ReactNode {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postFilePath = path.join(POSTS_PATH, `${params?.slug}.mdx`);
+  if (params?.slug) {
+    const postFilePath = path.join(POSTS_PATH, `${params?.slug}`, "index.mdx");
 
-  const source = fs.readFileSync(postFilePath);
-  const { content, data } = matter(source);
+    const directory = path.join(POSTS_PATH, `${params?.slug}`);
 
-  const { code } = await bundleMDX(content, {
-    cwd: postFilePath,
-    xdmOptions: (options) => {
-      options.remarkPlugins = [remarkMdxImages];
+    const source = await fs.promises.readFile(postFilePath);
 
-      return options;
-    },
-    esbuildOptions: (options) => {
-      options.loader = {
-        ...options.loader,
-        ".png": "dataurl",
-      };
+    const { content, data } = matter(source);
 
-      return options;
-    },
-  });
+    const imagesUrl = `/img/post/${params.slug}/`;
+
+    const { code } = await bundleMDX(content, {
+      cwd: directory,
+      xdmOptions: (options) => {
+        options.remarkPlugins = [remarkMdxImages];
+
+        return options;
+      },
+      esbuildOptions: (options) => {
+        options.outdir = path.join(process.cwd(), "public", imagesUrl);
+
+        options.loader = {
+          ...options.loader,
+          ".svg": "dataurl",
+          ".png": "dataurl",
+        };
+
+        options.publicPath = imagesUrl;
+        options.write = true;
+
+        return options;
+      },
+    });
+
+    return {
+      props: {
+        code,
+        frontMatter: data,
+      },
+    };
+  }
 
   return {
-    props: {
-      code,
-      frontMatter: data,
-    },
+    props: {},
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = postFilePaths
-    .map((path: string) => path.replace(/\.mdx?$/, ""))
+  const dirs = await fs.promises.readdir(POSTS_PATH);
+
+  const paths = dirs
+    .filter((filename: string) => filename !== ".DS_Store")
     .map((slug: string) => ({ params: { slug } }));
 
   return {
