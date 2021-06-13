@@ -15,7 +15,7 @@ import { remarkMdxImages } from "remark-mdx-images";
 import { bundleMDX } from "mdx-bundler";
 import { getMDXComponent } from "mdx-bundler/client";
 import { POSTS_PATH } from "mdx/utils";
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import path from "path";
 import React, { ReactNode, useMemo } from "react";
 
