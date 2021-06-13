@@ -1,22 +1,31 @@
-import fs from "fs";
-import matter from "gray-matter";
-import { bundleMDX } from "mdx-bundler";
-import { getMDXComponent } from "mdx-bundler/client";
-import { GetStaticPaths, GetStaticProps } from "next";
-import path from "path";
-import React, { ReactNode, useMemo } from "react";
+import { CheckCircleIcon } from "@chakra-ui/icons";
 import {
   chakra,
   Heading,
   Link as BaseLink,
+  List,
+  ListIcon,
+  ListItem,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { POSTS_PATH, postFilePaths } from "mdx/utils";
+import fs from "fs";
+import matter from "gray-matter";
+import { remarkMdxImages } from "remark-mdx-images";
+import { bundleMDX } from "mdx-bundler";
+import { getMDXComponent } from "mdx-bundler/client";
+import { postFilePaths, POSTS_PATH } from "mdx/utils";
+import { GetStaticPaths, GetStaticProps } from "next";
+import path from "path";
+import React, { ReactNode, useMemo } from "react";
 
 type Props = {
   code: string;
-  frontMatter: { title: string; description?: string };
+  frontMatter: { title: string; description?: string; type?: string };
+};
+
+type MDXComponentProps = {
+  children?: ReactNode;
 };
 
 export default function PostPage({ code, frontMatter }: Props): ReactNode {
@@ -33,7 +42,23 @@ export default function PostPage({ code, frontMatter }: Props): ReactNode {
       )}
 
       <chakra.main mt={8}>
-        <Component components={{ a: BaseLink }} />
+        <Component
+          components={{
+            a: BaseLink,
+            h2: ({ ...props }) => (
+              <Heading {...props} as="h2" size="lg" mt={"1.2em"} />
+            ),
+            ul: ({ ...props }) => <List {...props} spacing={2} mt={"1.2em"} />,
+            li: (props: MDXComponentProps) => (
+              <ListItem ml={"1.2em"}>
+                <ListIcon as={CheckCircleIcon} color="brand.500" />
+                {props.children}
+              </ListItem>
+            ),
+            p: ({ ...props }) => <Text {...props} mt={"1.2em"} />,
+          }}
+          type={frontMatter.type}
+        />
       </chakra.main>
     </chakra.div>
   );
@@ -44,7 +69,23 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const source = fs.readFileSync(postFilePath);
   const { content, data } = matter(source);
-  const { code } = await bundleMDX(content);
+
+  const { code } = await bundleMDX(content, {
+    cwd: postFilePath,
+    xdmOptions: (options) => {
+      options.remarkPlugins = [remarkMdxImages];
+
+      return options;
+    },
+    esbuildOptions: (options) => {
+      options.loader = {
+        ...options.loader,
+        ".png": "dataurl",
+      };
+
+      return options;
+    },
+  });
 
   return {
     props: {

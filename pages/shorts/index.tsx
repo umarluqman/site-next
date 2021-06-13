@@ -80,7 +80,7 @@ const Shorts = ({ posts }: ShortsProps): ReactNode => {
 export const getStaticProps: GetStaticProps = async () => {
   const posts = postFilePaths.map((filePath) => {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
-    console.log(source);
+    console.log(postFilePaths);
     const { data } = matter(source);
 
     return {
