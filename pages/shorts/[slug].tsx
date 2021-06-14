@@ -18,6 +18,7 @@ import { POSTS_PATH } from "mdx/utils";
 import { GetStaticPaths, GetStaticProps } from "next";
 import path from "path";
 import React, { ReactNode, useMemo } from "react";
+import { Image } from "mdx/components/Image";
 
 type Props = {
   code: string;
@@ -28,7 +29,7 @@ type MDXComponentProps = {
   children?: ReactNode;
 };
 
-export default function PostPage({ code, frontMatter }: Props): ReactNode {
+const PostPage: React.FC<Props> = ({ code, frontMatter }: Props) => {
   const Component = useMemo(() => getMDXComponent(code), [code]);
   const textColor = useColorModeValue("gray.800", "gray.100");
 
@@ -56,13 +57,16 @@ export default function PostPage({ code, frontMatter }: Props): ReactNode {
               </ListItem>
             ),
             p: ({ ...props }) => <Text {...props} mt={"1.2em"} />,
+            img: Image,
           }}
           type={frontMatter.type}
         />
       </chakra.main>
     </chakra.div>
   );
-}
+};
+
+export default PostPage;
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (params?.slug) {
