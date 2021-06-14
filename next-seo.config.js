@@ -1,29 +1,27 @@
-const title = "Umar Luqman";
-const description =
-  "Life-long learner, front-end developer, and practising calisthenics";
+import { meta } from "./src/meta";
 
 const SEO = {
-  title,
-  description,
+  title: meta.name,
+  description: meta.description,
   canonical: "https://umarluqman.dev",
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: "https://umarluqman.dev",
-    title,
-    description,
+    title: meta.name,
+    description: meta.description,
   },
   images: [
     {
-      url: "/favicon/android-chrome-512x512.png",
-      width: 512,
-      height: 512,
+      url: "/^.jpeg",
+      width: 1200,
+      height: 628,
       alt: "Umar Luqman",
     },
   ],
   twitter: {
-    handle: "@umarlqmn",
-    site: "@umarlqmn",
+    handle: meta.author.social.twitterHandle,
+    site: meta.author.social.twitterHandle,
     cardType: "summary_large_image",
   },
 };

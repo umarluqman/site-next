@@ -19,10 +19,17 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import path from "path";
 import React, { ReactNode, useMemo } from "react";
 import { Image } from "mdx/components/Image";
+import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 type Props = {
   code: string;
-  frontMatter: { title: string; description?: string; type?: string };
+  frontMatter: {
+    title: string;
+    description?: string;
+    type?: string;
+    slug: string;
+  };
 };
 
 type MDXComponentProps = {
@@ -35,6 +42,26 @@ const PostPage: React.FC<Props> = ({ code, frontMatter }: Props) => {
 
   return (
     <chakra.div w="full" maxWidth={688} m="0 auto" p={{ base: 4, sm: 0 }}>
+      <Head>
+        <title>{`${frontMatter.title} / Umar Luqman`}</title>
+      </Head>
+      <NextSeo
+        openGraph={{
+          type: "article",
+          url: `https://umarluqman.dev/shorts/${frontMatter.slug}`,
+          title: frontMatter.title,
+          description:
+            "Shorts, a series of atomic ideas from my personal knowledge management system",
+          images: [
+            {
+              url: "/^.jpeg",
+              width: 1200,
+              height: 628,
+              alt: "Umar Luqman",
+            },
+          ],
+        }}
+      />
       <Heading mb={4} mt={8} as="h1" size="xl">
         {frontMatter.title}
       </Heading>
@@ -107,6 +134,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       props: {
         code,
         frontMatter: data,
+        slug: params.slug,
       },
     };
   }
