@@ -79,7 +79,7 @@ const PostPage: React.FC<Props> = ({ code, frontMatter }: Props) => {
             ul: ({ ...props }) => <List {...props} spacing={2} mt={"1.2em"} />,
             li: (props: MDXComponentProps) => (
               <ListItem ml={"1.2em"}>
-                <ListIcon as={CheckCircleIcon} color="brand.500" />
+                <ListIcon as={CheckCircleIcon} color="accent.700" />
                 {props.children}
               </ListItem>
             ),

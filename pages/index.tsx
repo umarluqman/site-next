@@ -43,15 +43,15 @@ export default function Home(): ReactNode {
       </Heading>
       <List spacing={3} color={textColor}>
         <ListItem>
-          <ListIcon as={CheckCircleIcon} color="brand.500" />
+          <ListIcon as={CheckCircleIcon} color="accent.700" />
           Practising progression exercises to my first muscle-up.
         </ListItem>
         <ListItem>
-          <ListIcon as={CheckCircleIcon} color="brand.500" />
+          <ListIcon as={CheckCircleIcon} color="accent.700" />
           Finishing this website, yeah I know it&apos;s meta.
         </ListItem>
         <ListItem>
-          <ListIcon as={CheckCircleIcon} color="brand.500" />
+          <ListIcon as={CheckCircleIcon} color="accent.700" />
           Learning Web 3.0
         </ListItem>
       </List>
