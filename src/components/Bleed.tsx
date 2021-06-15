@@ -1,4 +1,6 @@
-import { chakra, StyleProps } from "@chakra-ui/react";
+// @ts-nocheck
+
+import { Box, StyleProps } from "@chakra-ui/react";
 import React from "react";
 
 interface BleedProps extends StyleProps {
@@ -7,7 +9,7 @@ interface BleedProps extends StyleProps {
 
 export const Bleed = ({ children, ...chakraProps }: BleedProps) => {
   return (
-    <chakra.div
+    <Box
       w="100vw"
       pos="relative"
       left="50%"
@@ -17,6 +19,6 @@ export const Bleed = ({ children, ...chakraProps }: BleedProps) => {
       {...chakraProps}
     >
       {children}
-    </chakra.div>
+    </Box>
   );
 };
