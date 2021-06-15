@@ -615,6 +615,293 @@
   dependencies:
     "@chakra-ui/utils" "1.8.0"
 
+"@emotion-icons/bootstrap@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/bootstrap/-/bootstrap-3.14.0.tgz#daf67219a7b2d743961e60ce097abce01c62d87c"
+  integrity sha512-ng5DTAMPiTTEGnojZC7PMBmVtzAyqBtDevQp9QPJqx9smovUbnJbL0oj08d8tTIHHgatHLh7AHPgex+p3/yJMw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/boxicons-logos@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/boxicons-logos/-/boxicons-logos-3.14.0.tgz#dd90e91b0723ae5464e14a4fc01bea09fa42fe6d"
+  integrity sha512-p7SWz/PWRyv6zWm3JEGi3Y7xAPFZfy21kqStECD5o9xHn/lO8HyQEWBGWpYWnZWCVeb62bQ+GKlWprufEUNU2g==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/boxicons-regular@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/boxicons-regular/-/boxicons-regular-3.14.0.tgz#5104cee0df97a28e950e4f8cf7543aec0eaa6247"
+  integrity sha512-9J3It4ZGAHoklfdE5Y+/h9qAI1s58v3XjxJYuwoJIknY42U5xo26YzarnI4SaXKcZZL+hJO9pK32f6MywPdYGw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/boxicons-solid@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/boxicons-solid/-/boxicons-solid-3.14.0.tgz#09cdf5a429063308715b3678c428121a3f8209e9"
+  integrity sha512-oIR1eIlgAfX8i90u/MSshOcVQuk0YqzwcarKfp23gQ9AQSeBBp+ub2Brz6jz9qQotlIAnG/U56zASW5l5GKvwA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/crypto@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/crypto/-/crypto-3.14.0.tgz#d5e107656a8f28ad6d3a9ae1b3a6e38515eb8da2"
+  integrity sha512-N2PCOMrQQ7TC9QnpHLrNl1xe77SsOK4aPVOtT0p9F/jB4LdQpkDGeHGeW27OLFetx0CzV/iRySwrVKdiU+TTYg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/emotion-icon@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/emotion-icon/-/emotion-icon-4.1.0.tgz#587667e92a72dc3b271713eed4b72c6bf3b22df1"
+  integrity sha512-bOUbWj8DPjUK5MtRx2ApMudOnh/tasqJwa+sdRbqsZD0g0hYf0jCsTDNs/57VvGOJH2PfWDKD1jbLjwajAYT9A==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+
+"@emotion-icons/entypo-social@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/entypo-social/-/entypo-social-3.14.0.tgz#41dab22b3d4687d3ebaa237da32a7d245683d199"
+  integrity sha512-vl7vGlz1oGQMNpYGdpMH6dsHCdpyPvGKm/5HxFVAo8WykeqT/U8PbYTVV13rTPyyVYWPdDPlyKIZl1bGXX55jw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/entypo@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/entypo/-/entypo-3.14.0.tgz#9c337604e6e5c6b28b585abc1ac90a3cd7e33405"
+  integrity sha512-fqhin1fVaK2jS+FLnc2tXzsk5aJs+bQD+/QbC1cCLmZkhGwY5E2KglfV6OwuiTo96rEEkMo7SHfWXqjZf9PQbw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/evaicons-outline@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/evaicons-outline/-/evaicons-outline-3.14.0.tgz#47310b495f75df0357391938dc396a76eb6b3158"
+  integrity sha512-H1/9qjpC5NACPgfklDRxMuYYQ7zZL0Oa9zagrYldnV4QMlQr/4CQFoqGzbDteFmQosaa1F4hH8XfutsGMQfKnA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/evaicons-solid@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/evaicons-solid/-/evaicons-solid-3.14.0.tgz#c34c8ed058fe3fb3a4243ce6337b7137df8d26cf"
+  integrity sha512-3vZoV4SjQ9ByNVYLFpjZrvVIn6pQPznZqPnGEvssL1IoXDiOFvEMWjYa+gtxlAVC1eB7wXWoxRhPLT6jUhgVdw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/evil@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/evil/-/evil-3.14.0.tgz#c8d2b9edeae97c325c8201dcd2a939b5ea1e0610"
+  integrity sha512-V2hyHLlxpLoxg+DcefOKji7D+gEsIC3EHj2vu9F4e7sanFOF/Ep7a2rFl7t4cAjm2wP32VfhoXp6glXlfsZpag==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/fa-brands@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/fa-brands/-/fa-brands-3.14.0.tgz#43b7c37473a5c997d7fe2a7df13d205689192696"
+  integrity sha512-KjYcXWn0fMt6PXcbWcp4PhbDajE/Yj67HitfVWJOdiJ43GfGT7LCbvvNGXEx7aU3aZgb7lWt7CooOBKGdQoUJg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/fa-regular@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/fa-regular/-/fa-regular-3.14.0.tgz#914b071722d96221dd344a9e17eb17b1a89417e0"
+  integrity sha512-46LGFssGApBQjYEypkdaMEGzpVCadPblwIx/zIom1i63SHuoAeDSZOaPLMuqYiBIL0iKeKgTntD9HTvpz/tB/A==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/fa-solid@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/fa-solid/-/fa-solid-3.14.0.tgz#b765d711d7aabdc0aeb3374d45861de17382a1ff"
+  integrity sha512-NEmiShaIsHouBfKcTxke1CYpzHrgZA20YXDN/c8dqxPpm6TIVS8dga/cJWBBlAxsR+2PbWMBMtC1z6Ie42zuCg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/feather@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/feather/-/feather-3.14.0.tgz#e7d1d06c8a1718fdcf9f064f24024c3724a4a011"
+  integrity sha512-Qntrd4QEHlyMpRe42dPGZwncLZ72J6F8Jk+gmMRvyBq2vewFR2zOaRsMLRWOuedC9pTnz3Po3t7yMn4fvf41sA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/fluentui-system-filled@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/fluentui-system-filled/-/fluentui-system-filled-3.14.0.tgz#3c053735dc77652b824114c1f60734b6449a9fb0"
+  integrity sha512-SCX5KfxQKazivq3z6S1XhaF9PPsSLUvsJCKQlY1K0zLtv4Vd8iPDsGtAdO+OeYIKcEiOtqlTOBDf+YacoZfITQ==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/fluentui-system-regular@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/fluentui-system-regular/-/fluentui-system-regular-3.14.0.tgz#2c0dc027ec19e3081aa34aa9415c8faaaef4c7f0"
+  integrity sha512-gkZoX2gEifbBrvyIWJFprj6VXdjPid8pE2yYiStxfoIvhYF8ATYe1qCDXQj9JtDuG4VkkO3L27hGJA+caPCiMw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/foundation@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/foundation/-/foundation-3.14.0.tgz#ed1fbcfa0c0e8ceb820a666f4cc016dc1a7ab7de"
+  integrity sha512-4VM+fcvPHjkBXgFIazK95AL8v3nqLfYJDObO5Eu2coCtSi1nU3mW5UC4ZrTA4KKF2fjS6/n4cLm699Nrx6E7nQ==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/heroicons-outline@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/heroicons-outline/-/heroicons-outline-3.14.0.tgz#c23a9b1620355304900f994fbefd51d58892dff6"
+  integrity sha512-U+BhfRkwrWenAeciXiDrRIE55ygESAXkItd+DBIlOQjc6XI8uk0WRaKE4AxDVXMeLK0RbQxjNSCrkqkM/HuQuQ==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/heroicons-solid@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/heroicons-solid/-/heroicons-solid-3.14.0.tgz#bbae8b98511768b06a31399eb39f8fa58896f77e"
+  integrity sha512-5sGB4Z9tXhO5Hd9sYH5DW1W5eiXZUVGoe3WTe/KY97puTSzrSR1tBJXNFz32xZobThxEGAlMtyX1tFjJ6em+Qg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/icomoon@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/icomoon/-/icomoon-3.14.0.tgz#d30b85824272b21fec690487fc4253b900ea77bf"
+  integrity sha512-ICw9hST/uRRL8sA2ThDVlEpP5jVXpfHXkDbG46ZsVr6JXQXIeb05OKJJO29/QwboJt36Qi6KEF3DZRQGQdBbIA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/ionicons-outline@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/ionicons-outline/-/ionicons-outline-3.14.0.tgz#0660276938904f7f2bd732a4452b048e848836ec"
+  integrity sha512-mo+S9iyLFPxGccaJD557PtgexaH+LisP5qdvsWqFS8+n6narXEWGDh7v0SN8B5kM6Zm7ewg0ZQXoAQ2bL6VsPg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/ionicons-sharp@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/ionicons-sharp/-/ionicons-sharp-3.14.0.tgz#bacab17b92276a3944e738fbdbe1f2490863504e"
+  integrity sha512-+7UKoDBn6gpplDyUTDGNnISWSGGzPhVt2tFbM7c9mKZ18451dxMPl4fOQiXxf1Cmv/QiAaAHfizcPU3hd6xs2Q==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/ionicons-solid@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/ionicons-solid/-/ionicons-solid-3.14.0.tgz#721bb173e2859406c48ece15e007362ff2da94de"
+  integrity sha512-K4khi4x4XvYww81tkszM5xdJe+VE87bggBerY7burJw/aKfRlB1GM8hxqJbI7qZmSbUZiN7AKqc9LGQ03Tjt/A==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/material-outlined@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/material-outlined/-/material-outlined-3.14.0.tgz#2733656b1c38fb8a50fa5ac7ad76090fc78f7fe0"
+  integrity sha512-Y4YS4OLPbu5ytN9XjB+7duM5pkkofUhr6YqBlta1Fer6dMHTMKy9GnnDyqGPJ/jYxS+6keVmL8WcTzWYHzQktA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/material-rounded@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/material-rounded/-/material-rounded-3.14.0.tgz#dfdb30c018241cf47eff7ae780c16bc899e4b836"
+  integrity sha512-uMGajIPbTzYcqbJVBOypWA6kbl/6Hi3Z0qo7VONi6U5r5BOfxcMVgXKydBGI4qqy07oEnR/TDoOzgDT/XWKl1Q==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/material-sharp@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/material-sharp/-/material-sharp-3.14.0.tgz#79d57aa7e87d0e70bf02d82bd7dfa615e35685e2"
+  integrity sha512-wnr3nIaHrt/AdZ6tj6o5AX0KybZDH+vwe52MRGIMUACY8iN4D/Pr0ee8pWgwPEC8gZfltG+ygq5Nn9VS5NDB6w==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/material-twotone@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/material-twotone/-/material-twotone-3.14.0.tgz#b2b202934666cea204e80a9191e19479d3a909a5"
+  integrity sha512-+8IS7VHbNtQbgfj9kjXOG6BbLNvqsMyA6ZQZU/Gj0bjagS4IykZUaKClVe+ttMb98MePA+0TzXw+M1a1rYyzuA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/material@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/material/-/material-3.14.0.tgz#7575c7c11671a78790413da63bb6e1884e74fff7"
+  integrity sha512-VQrlJReCLpdntuMhRFTEGNQUVHgCorpyXpiYvXTlNHZXlgiDg5qKTPl5JwHz+LLcDazTN5ND8SieG62BTq+mxg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/octicons@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/octicons/-/octicons-3.14.0.tgz#bf97ae9ccf2a109abf2716807e207b5a677bb82c"
+  integrity sha512-5FiT3x/jd2vT87/0N0LRNUGuXS23g09LZHI3bl/FPdbnHrsKxwsJBBN/R1t3/wEy+/Y1ilbgY7Yc12l12J1d5Q==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/open-iconic@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/open-iconic/-/open-iconic-3.14.0.tgz#c266cfd3503f9c1fda0dbdbe2ce0eaf7e9191d84"
+  integrity sha512-RQbn1PkyLHqJSVBkxOjI8SDc3O1AbuGYVGpeoUIo8H7Hpsg5Gh/nvQMMBKVKRvsYyY9rJcisNQw26xv02+U0QA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/remix-fill@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/remix-fill/-/remix-fill-3.14.0.tgz#b75996187593b79073a8f6a3d1984916e9d53844"
+  integrity sha512-8/eMcu1EjcUsSLCKP99bhHTauMpLgdCfmQMBM7le1NHX4tX5lbP+V2cSScQN/ltWAJ0dn4ays5lacUZIqwb6iw==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/remix-line@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/remix-line/-/remix-line-3.14.0.tgz#485bd9a2f84932e1ab80ef0c5cee3109ff9dada5"
+  integrity sha512-FVmEsCGkCpcgskLS1Kxmf4FjdbiEDBv7WDBHc/fTNV0ZztBlCrqVuDw/UsVmmOLMinjzcQYOKRtVvediSw8vIA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/simple-icons@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/simple-icons/-/simple-icons-3.14.0.tgz#bf26f5f9f9d23860278a820333a6ada7b240704c"
+  integrity sha512-AvQMgFCr6Dsm8lvHv1AWFyy6OHmrm/Er9b6LyJYLqOt/O56toXSfhq/Kb3g89qwCQMjRCwSiBMxXGjVgOb4YNQ==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/typicons@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/typicons/-/typicons-3.14.0.tgz#18850a15d1cd206e3b5cade3549b6ad602444efb"
+  integrity sha512-22d8hEKXZI4fB+BPsVJfNPTBwtV0vy9ARaKveH2x96dEaEaQyLTGTkI8nDUk/9EwrZKERQJsq36azJW3cE38zg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
+"@emotion-icons/zondicons@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/zondicons/-/zondicons-3.14.0.tgz#a72e9adf1f8841a9212703b65ca559ae53085c7e"
+  integrity sha512-MAMwcP6oALFPRQztIRYKzQrl9E/SzvYrho8P8pnY9zOw4ZIYdZ8UV+xu/763ihTMuUuwLuivULDkJMygXvPq3w==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
 "@emotion/babel-plugin@^11.3.0":
   version "11.3.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.3.0.tgz#3a16850ba04d8d9651f07f3fb674b3436a4fb9d7"
@@ -1956,6 +2243,49 @@ emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
+
+emotion-icons@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/emotion-icons/-/emotion-icons-3.14.0.tgz#9d42c4e38c64ec43ac27314ebe6203661b58f6dc"
+  integrity sha512-+s6EorqPGZR/9I5srIm+nKcnBtyJwGf8tGkh80WAXtAELbZSrVAe/mHqtbd7XdQOEE3FSl1D3/8u+ZZgRONeeg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/bootstrap" "3.14.0"
+    "@emotion-icons/boxicons-logos" "3.14.0"
+    "@emotion-icons/boxicons-regular" "3.14.0"
+    "@emotion-icons/boxicons-solid" "3.14.0"
+    "@emotion-icons/crypto" "3.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+    "@emotion-icons/entypo" "3.14.0"
+    "@emotion-icons/entypo-social" "3.14.0"
+    "@emotion-icons/evaicons-outline" "3.14.0"
+    "@emotion-icons/evaicons-solid" "3.14.0"
+    "@emotion-icons/evil" "3.14.0"
+    "@emotion-icons/fa-brands" "3.14.0"
+    "@emotion-icons/fa-regular" "3.14.0"
+    "@emotion-icons/fa-solid" "3.14.0"
+    "@emotion-icons/feather" "3.14.0"
+    "@emotion-icons/fluentui-system-filled" "3.14.0"
+    "@emotion-icons/fluentui-system-regular" "3.14.0"
+    "@emotion-icons/foundation" "3.14.0"
+    "@emotion-icons/heroicons-outline" "3.14.0"
+    "@emotion-icons/heroicons-solid" "3.14.0"
+    "@emotion-icons/icomoon" "3.14.0"
+    "@emotion-icons/ionicons-outline" "3.14.0"
+    "@emotion-icons/ionicons-sharp" "3.14.0"
+    "@emotion-icons/ionicons-solid" "3.14.0"
+    "@emotion-icons/material" "3.14.0"
+    "@emotion-icons/material-outlined" "3.14.0"
+    "@emotion-icons/material-rounded" "3.14.0"
+    "@emotion-icons/material-sharp" "3.14.0"
+    "@emotion-icons/material-twotone" "3.14.0"
+    "@emotion-icons/octicons" "3.14.0"
+    "@emotion-icons/open-iconic" "3.14.0"
+    "@emotion-icons/remix-fill" "3.14.0"
+    "@emotion-icons/remix-line" "3.14.0"
+    "@emotion-icons/simple-icons" "3.14.0"
+    "@emotion-icons/typicons" "3.14.0"
+    "@emotion-icons/zondicons" "3.14.0"
 
 encoding@0.1.13:
   version "0.1.13"
