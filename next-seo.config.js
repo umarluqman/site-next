@@ -10,15 +10,16 @@ const SEO = {
     url: "https://umarluqman.dev",
     title: meta.name,
     description: meta.description,
+    images: [
+      {
+        url: "/^.jpeg",
+        width: 1200,
+        height: 628,
+        alt: "Umar Luqman",
+      },
+    ],
   },
-  images: [
-    {
-      url: "/^.jpeg",
-      width: 1200,
-      height: 628,
-      alt: "Umar Luqman",
-    },
-  ],
+
   twitter: {
     handle: meta.author.social.twitterHandle,
     site: meta.author.social.twitterHandle,
