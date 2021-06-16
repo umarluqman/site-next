@@ -4,25 +4,20 @@ const SEO = {
   title: meta.name,
   description: meta.description,
   canonical: "https://umarluqman.dev",
+
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: "https://umarluqman.dev",
     title: meta.name,
     description: meta.description,
-    images: [
-      {
-        url: "/^.jpeg",
-        width: 1200,
-        height: 628,
-        alt: "Umar Luqman",
-      },
-    ],
+    images: meta.images,
+    site_name: "Umar Luqman's site",
   },
 
   twitter: {
-    handle: meta.author.social.twitterHandle,
-    site: meta.author.social.twitterHandle,
+    handle: meta.author.social.twitterHandle, // author handle
+    site: meta.author.social.twitterHandle, // website hadle
     cardType: "summary_large_image",
   },
 };

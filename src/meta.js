@@ -9,4 +9,12 @@ export const meta = {
       twitterHandle: "@umarlqmn",
     },
   },
+  images: [
+    {
+      url: "/^.jpeg",
+      width: 1200,
+      height: 628,
+      alt: "Website logo",
+    },
+  ],
 };
