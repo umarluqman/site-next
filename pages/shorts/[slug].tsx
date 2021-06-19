@@ -21,6 +21,7 @@ import React, { ReactNode, useMemo } from "react";
 import { Image } from "mdx/components/Image";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
+import { meta } from "meta";
 
 type Props = {
   code: string;
@@ -52,14 +53,7 @@ const PostPage: React.FC<Props> = ({ code, frontMatter }: Props) => {
           title: frontMatter.title,
           description:
             "Shorts, a series of atomic ideas from my personal knowledge management system",
-          images: [
-            {
-              url: "/^.jpeg",
-              width: 1200,
-              height: 628,
-              alt: "Umar Luqman",
-            },
-          ],
+          images: meta.images,
         }}
       />
       <Heading mb={4} mt={8} as="h1" size="xl">

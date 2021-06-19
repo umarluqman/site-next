@@ -11,7 +11,7 @@ export const meta = {
   },
   images: [
     {
-      url: "/^.jpeg",
+      url: "/website-logo.jpeg",
       width: 1200,
       height: 628,
       alt: "Website logo",
