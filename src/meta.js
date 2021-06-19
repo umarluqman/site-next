@@ -1,6 +1,7 @@
 export const meta = {
   name: "Umar Luqman",
-  description: "Life-long learner, into front-end & calisthenics",
+  description:
+    "Life-long learner, front-end developer, and into calisthenics. Currently exploring web 3.0 and learning Solidity.",
   productionUrl: "https://umarluqman.dev",
   author: {
     name: "Umar Luqman",
