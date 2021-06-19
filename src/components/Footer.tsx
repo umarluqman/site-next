@@ -1,4 +1,4 @@
-import { chakra, Text } from "@chakra-ui/react";
+import { chakra, Text, Link } from "@chakra-ui/react";
 import { Github, Twitter } from "emotion-icons/feather";
 import React from "react";
 
@@ -17,10 +17,14 @@ export const Footer = () => {
     >
       <Text>Made with love from 🇲🇾</Text>
       <chakra.div w={3}></chakra.div>
-      <Github width={24} strokeWidth={1.8}></Github>
+      <Link href="https://github.com" isExternal>
+        <Github width={24} strokeWidth={1.8}></Github>
+      </Link>
       <chakra.div w={3}></chakra.div>
 
-      <Twitter width={24} strokeWidth={1.8}></Twitter>
+      <Link href="https://twitter.com/umarlqmn" isExternal>
+        <Twitter width={24} strokeWidth={1.8}></Twitter>
+      </Link>
     </chakra.footer>
   );
 };
