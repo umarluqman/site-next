@@ -1,6 +1,7 @@
 import { Flex, useColorMode, HStack, Button } from "@chakra-ui/react";
 import { Link } from "./Link";
 import React from "react";
+import { Sun, Moon } from "emotion-icons/feather";
 
 const URLs = [
   {
@@ -38,7 +39,11 @@ export const Header = () => {
           </Link>
         ))}
         <Button onClick={toggleColorMode} borderRadius="none">
-          {isDark ? "Light" : "Dark"}
+          {isDark ? (
+            <Sun width={20} strokeWidth={1.6} />
+          ) : (
+            <Moon width={20} strokeWidth={1.8} />
+          )}
         </Button>
       </HStack>
     </Flex>
