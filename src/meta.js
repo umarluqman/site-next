@@ -11,7 +11,7 @@ export const meta = {
   },
   images: [
     {
-      url: "/website-logo.jpeg",
+      url: "https://www.umarluqman.dev/img/^.jpeg",
       width: 1200,
       height: 628,
       alt: "Website logo",
