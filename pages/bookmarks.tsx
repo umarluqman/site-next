@@ -78,14 +78,16 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const rows = await sheet.getRows();
 
-  const bookmarkList = rows.map(({ _rawData }) => {
-    return {
-      addedAt: _rawData[0].split("at")[0],
-      title: _rawData[1],
-      description: _rawData[2],
-      url: _rawData[3],
-    };
-  });
+  const bookmarkList = rows
+    .map(({ _rawData }) => {
+      return {
+        addedAt: _rawData[0].split("at")[0],
+        title: _rawData[1],
+        description: _rawData[2],
+        url: _rawData[3],
+      };
+    })
+    .reverse();
 
   return {
     props: { bookmarkList },
