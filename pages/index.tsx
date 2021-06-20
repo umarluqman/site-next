@@ -12,7 +12,7 @@ import {
 import React, { ReactNode } from "react";
 
 export default function Home(): ReactNode {
-  const textColor = useColorModeValue("gray.800", "gray.100");
+  const textColor = useColorModeValue("gray.800", "gray.400");
   return (
     <chakra.div w="full" maxWidth={688} m="0 auto" p={{ base: 4, sm: 0 }}>
       <Heading mb={4} mt={20} as="h1" size="2xl">
