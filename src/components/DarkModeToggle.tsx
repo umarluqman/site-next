@@ -1,4 +1,4 @@
-import { chakra, theme, useColorMode } from "@chakra-ui/react";
+import { theme, useColorMode } from "@chakra-ui/react";
 import { motion, SVGMotionProps } from "framer-motion";
 import React from "react";
 
@@ -89,7 +89,7 @@ export const DarkModeToggle = () => {
 
         <Circle
           cx="200.5"
-          cy="111.5px"
+          cy="105.5px"
           variants={{
             light: { cy: "160px", scale: 0, opacity: 0 },
             dark: { cy: "111.5px", scale: 1, opacity: 1, fill: "white" },
@@ -161,7 +161,7 @@ export const DarkModeToggle = () => {
               cx: 450,
               opacity: 0,
               transition: { duration: 0.4 },
-              fill: "#8b8c9121", // mid point between gray.900 and white with less opacity
+              fill: "rgba(139, 140, 145, 0.129)", // mid point between gray.900 and white with less opacity
             },
           }}
           animate={colorMode}
