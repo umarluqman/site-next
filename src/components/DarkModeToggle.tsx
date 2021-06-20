@@ -13,7 +13,7 @@ export const DarkModeToggle = () => {
   return (
     <label
       htmlFor={"toggleDarkMode"}
-      style={{ width: "24px", cursor: "pointer" }}
+      style={{ width: "24px", cursor: "pointer", display: "table" }}
     >
       <input
         id={"toggleDarkMode"}
