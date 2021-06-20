@@ -15,11 +15,11 @@ export default function Home(): ReactNode {
   const textColor = useColorModeValue("gray.800", "gray.100");
   return (
     <chakra.div w="full" maxWidth={688} m="0 auto" p={{ base: 4, sm: 0 }}>
-      <Heading mb={4} mt={20} as="h1" size="2xl" textAlign="center">
+      <Heading mb={4} mt={20} as="h1" size="2xl">
         Umar Luqman
       </Heading>
-      <Text color={textColor} textAlign="center">
-        Life-long learner, front-end developer, and practising calisthenics.
+      <Text color={textColor}>
+        Life-long learner, front-end developer, and into calisthenics.
       </Text>
 
       <Heading mb={5} mt={20} as="h2" size="xl">
@@ -55,6 +55,7 @@ export default function Home(): ReactNode {
           Learning Web 3.0
         </ListItem>
       </List>
+
       <Text textAlign="right" mt={4} fontStyle="italic">
         Last updated in 13th June 2021
       </Text>
