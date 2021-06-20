@@ -1,8 +1,7 @@
-import { Flex, useColorMode, HStack, Button } from "@chakra-ui/react";
-import { Link } from "./Link";
-import React from "react";
-import { Sun, Moon } from "emotion-icons/feather";
+import { Flex, HStack } from "@chakra-ui/react";
 import { DarkModeToggle } from "components/DarkModeToggle";
+import React from "react";
+import { Link } from "./Link";
 
 const URLs = [
   {
