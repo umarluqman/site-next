@@ -35,13 +35,6 @@ export const Header = () => {
             {title}
           </Link>
         ))}
-        {/* <Button onClick={toggleColorMode} borderRadius="none">
-          {isDark ? (
-            <Sun width={20} strokeWidth={1.6} />
-          ) : (
-            <Moon width={20} strokeWidth={1.8} />
-          )}
-        </Button> */}
         <DarkModeToggle />
       </HStack>
     </Flex>
