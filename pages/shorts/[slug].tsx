@@ -63,7 +63,7 @@ const PostPage: React.FC<Props> = ({ code, frontMatter }: Props) => {
         <Text color={textColor}>{frontMatter.description}</Text>
       )}
 
-      <chakra.main mt={8}>
+      <chakra.article mt={8}>
         <Component
           components={{
             a: BaseLink,
@@ -82,7 +82,7 @@ const PostPage: React.FC<Props> = ({ code, frontMatter }: Props) => {
           }}
           type={frontMatter.type}
         />
-      </chakra.main>
+      </chakra.article>
     </chakra.div>
   );
 };
