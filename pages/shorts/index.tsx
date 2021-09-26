@@ -35,7 +35,7 @@ const Shorts = ({ posts }: ShortsProps): ReactNode => {
       <Heading mb={8} mt={8} as="h1" size="xl">
         Shorts
       </Heading>
-
+      {/* 
       <Alert status="info" color={infoColor}>
         Selected atomic ideas from my
         <BaseLink
@@ -47,7 +47,7 @@ const Shorts = ({ posts }: ShortsProps): ReactNode => {
         >
           Obsidian <ExternalLinkIcon mx="2px" mt={-1} />
         </BaseLink>
-      </Alert>
+      </Alert> */}
 
       <chakra.ul mt={8} listStyleType="none">
         {posts.map((post) => {

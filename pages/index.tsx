@@ -33,9 +33,23 @@ export default function Home(): ReactNode {
       >
         FocusMode <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
+      <Text mt={1} color={textColor} mb={8}>
+        A Chrome extension to add confirmation popup when accessing distracting
+        website if the Focus mode is on.
+      </Text>
+
+      <Link
+        href="https://github.com/umarluqman/geo-nft"
+        isExternal
+        fontWeight="700"
+        fontSize="lg"
+      >
+        NFT Marketplace in Harmony ONE blockchain{" "}
+        <ExternalLinkIcon mx="2px" mt={-1} />
+      </Link>
       <Text mt={1} color={textColor}>
-        No more mindlessly browsing, only access distracting website with a
-        careful thought.
+        My experimental Web 3.0 project, it&apos;s a submission for Harmony ONE
+        hackathon, built with NextJS, Hardhat & TypeScript.
       </Text>
 
       <Heading mb={5} mt={20} as="h2" size="xl">
@@ -44,20 +58,30 @@ export default function Home(): ReactNode {
       <List spacing={3} color={textColor}>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="accent.700" />
-          Practising progression exercises to my first muscle-up.
+          Bought a calisthenics e-book,{" "}
+          <Link
+            href="https://g.co/kgs/o3rkyq"
+            isExternal
+            color="accent.700"
+            fontWeight={500}
+          >
+            Complete Calisthenics
+            <ExternalLinkIcon ml="3px" mt={-1} />
+          </Link>
+          . Excited to dive in!
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="accent.700" />
-          Finishing this website, yeah I know it&apos;s meta.
+          Looking for a full-time job in Web 3.0 space.
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="accent.700" />
-          Learning Web 3.0
+          Learning about Web 3.0.
         </ListItem>
       </List>
 
       <Text textAlign="right" mt={4} fontStyle="italic">
-        Last updated in 13th June 2021
+        Last updated in 24th September 2021
       </Text>
     </chakra.div>
   );
