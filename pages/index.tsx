@@ -33,7 +33,7 @@ export default function Home(): ReactNode {
       >
         FocusMode <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
-      <Text mt={1} color={textColor} mb={8}>
+      <Text mt={1} color={textColor} mb={10}>
         A Chrome extension to add confirmation popup when accessing distracting
         website if the Focus mode is on.
       </Text>
@@ -44,44 +44,39 @@ export default function Home(): ReactNode {
         fontWeight="700"
         fontSize="lg"
       >
-        NFT Marketplace in Harmony ONE blockchain{" "}
+        Generative on-chain NFT in Harmony ONE blockchain{" "}
+        <ExternalLinkIcon mx="2px" mt={-1} />
+      </Link>
+      <Text mt={1} color={textColor} mb={10}>
+        My experimental Web 3.0 project, it&apos;s a submission for Harmony ONE
+        hackathon, built with NextJS, Hardhat, Mapbox, Solidity & TypeScript.
+      </Text>
+
+      <Link
+        href="https://github.com/umarluqman/dashboard"
+        isExternal
+        fontWeight="700"
+        fontSize="lg"
+      >
+        Anti Sybils Dashboard
+        <ExternalLinkIcon mx="2px" mt={-1} />
+      </Link>
+      <Text mt={1} color={textColor} mb={10}>
+        Won 3rd place in Open Data Hackathon 2023 by Gitcoin.
+      </Text>
+
+      <Link
+        href="https://usrahdd.my/"
+        isExternal
+        fontWeight="700"
+        fontSize="lg"
+      >
+        UsraHDD Landing Page
         <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
       <Text mt={1} color={textColor}>
-        My experimental Web 3.0 project, it&apos;s a submission for Harmony ONE
-        hackathon, built with NextJS, Hardhat & TypeScript.
-      </Text>
-
-      <Heading mb={5} mt={20} as="h2" size="xl">
-        What I&apos;m up to now?
-      </Heading>
-      <List spacing={3} color={textColor}>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="accent.700" />
-          Bought a calisthenics e-book,{" "}
-          <Link
-            href="https://g.co/kgs/o3rkyq"
-            isExternal
-            color="accent.700"
-            fontWeight={500}
-          >
-            Complete Calisthenics
-            <ExternalLinkIcon ml="3px" mt={-1} />
-          </Link>
-          . Excited to dive in!
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="accent.700" />
-          Looking for a full-time job in Web 3.0 space.
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="accent.700" />
-          Learning about Web 3.0.
-        </ListItem>
-      </List>
-
-      <Text textAlign="right" mt={4} fontStyle="italic">
-        Last updated in 24th September 2021
+        Landing Page for an application, built with NextJS, Taiwind &
+        TypeScript, & Ghost Content API.
       </Text>
     </chakra.div>
   );

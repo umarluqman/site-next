@@ -29,11 +29,11 @@ export const Header = () => {
         as="nav"
         spacing={2}
       >
-        {URLs.map(({ url, title }) => (
+        {/* {URLs.map(({ url, title }) => (
           <Link href={url} key={url} p={1}>
             {title}
           </Link>
-        ))}
+        ))} */}
         <DarkModeToggle />
       </HStack>
     </Flex>

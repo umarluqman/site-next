@@ -41,11 +41,11 @@ export const Layout = ({ children }: { children: ReactNode }) => {
             <Github width={24} strokeWidth={1.8}></Github>
           </chakra.li>
         </Link>
-        <Link href="https://twitter.com/umarlqmn" isExternal>
+        {/* <Link href="https://twitter.com/umarlqmn" isExternal>
           <chakra.li my={2}>
             <Twitter width={24} strokeWidth={1.8}></Twitter>
           </chakra.li>
-        </Link>
+        </Link> */}
       </chakra.ul>
       <chakra.main minHeight={"82vh"}>{children}</chakra.main>
       <Footer />
