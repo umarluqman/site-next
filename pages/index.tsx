@@ -26,6 +26,19 @@ export default function Home(): ReactNode {
         Projects
       </Heading>
       <Link
+        href="https://github.com/umarluqman/focusmode-webext"
+        isExternal
+        fontWeight="700"
+        fontSize="lg"
+      >
+        FocusMode <ExternalLinkIcon mx="2px" mt={-1} />
+      </Link>
+      <Text mt={1} color={textColor} mb={10}>
+        The next iteration of Focus Mode web extension based on users feedbacks,
+        comes with new features and polished look. Made with Plasmo, Framer
+        Motion & Tailwind.
+      </Text>
+      <Link
         href="https://focusmode.app"
         isExternal
         fontWeight="700"
@@ -35,10 +48,10 @@ export default function Home(): ReactNode {
       </Link>
       <Text mt={1} color={textColor} mb={10}>
         A Chrome extension to add confirmation popup when accessing distracting
-        website if the Focus mode is on.
+        website. Crossed 9,000+ users with 4++/5 ratings.
       </Text>
 
-      <Link
+      {/* <Link
         href="https://github.com/umarluqman/geo-nft"
         isExternal
         fontWeight="700"
@@ -63,7 +76,7 @@ export default function Home(): ReactNode {
       </Link>
       <Text mt={1} color={textColor} mb={10}>
         Won 3rd place in Open Data Hackathon 2023 by Gitcoin.
-      </Text>
+      </Text> */}
 
       <Link
         href="https://usrahdd.my/"
@@ -75,8 +88,8 @@ export default function Home(): ReactNode {
         <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
       <Text mt={1} color={textColor}>
-        Landing Page for an application, built with NextJS, Taiwind &
-        TypeScript, & Ghost Content API.
+        Static landing Page for a mobile application, built with NextJS, Taiwind
+        & TypeScript, & Ghost Content API.
       </Text>
     </chakra.div>
   );
