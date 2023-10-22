@@ -31,7 +31,7 @@ export default function Home(): ReactNode {
         fontWeight="700"
         fontSize="lg"
       >
-        FocusMode <ExternalLinkIcon mx="2px" mt={-1} />
+        FocusMode v2 <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
       <Text mt={1} color={textColor} mb={10}>
         The next iteration of Focus Mode web extension based on users feedbacks,
