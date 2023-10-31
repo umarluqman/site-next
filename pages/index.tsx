@@ -26,7 +26,7 @@ export default function Home(): ReactNode {
         Projects
       </Heading>
       <Link
-        href="https://github.com/umarluqman/focusmode-webext"
+        href="https://youtu.be/-FXKXUeZu8o"
         isExternal
         fontWeight="700"
         fontSize="lg"
