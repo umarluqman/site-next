@@ -1,15 +1,12 @@
-import { CheckCircleIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   chakra,
   Heading,
   Link,
-  List,
-  ListIcon,
-  ListItem,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 export default function Home(): ReactNode {
   const textColor = useColorModeValue("gray.800", "gray.400");
@@ -19,24 +16,35 @@ export default function Home(): ReactNode {
         Umar Luqman
       </Heading>
       <Text color={textColor}>
-        Life-long learner, front-end developer, and into calisthenics.
+        Life-long learner, full-stack developer and into Bitcoin.
       </Text>
 
       <Heading mb={5} mt={20} as="h2" size="xl">
         Projects
       </Heading>
       <Link
-        href="https://youtu.be/-FXKXUeZu8o"
+        href="https://gunabitcoin.my"
         isExternal
         fontWeight="700"
         fontSize="lg"
       >
-        FocusMode v2 <ExternalLinkIcon mx="2px" mt={-1} />
+        GunaBitcoin.MY <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
       <Text mt={1} color={textColor} mb={10}>
-        The next iteration of Focus Mode web extension based on users feedbacks,
-        comes with new features and polished look. Made with Plasmo, Framer
-        Motion & Tailwind.
+        The most up-to-date business / organization directory that accept
+        Bitcoin as payment in Malaysia.
+      </Text>
+      <Link
+        href="https://primal.net/e/note1f7d8n6vfdztnft23tl5lf8a86qldru0us9rgmrhwq9dfmgr6z9js2vkvz9"
+        isExternal
+        fontWeight="700"
+        fontSize="lg"
+      >
+        Satsigner <ExternalLinkIcon mx="2px" mt={-1} />
+      </Link>
+      <Text mt={1} color={textColor} mb={10}>
+        Message signer and UTXO management mobile app for Bitcoin. Work in
+        progress. (Part timer)
       </Text>
       <Link
         href="https://focusmode.app"
@@ -47,8 +55,9 @@ export default function Home(): ReactNode {
         FocusMode <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
       <Text mt={1} color={textColor} mb={10}>
-        A Chrome extension to add confirmation popup when accessing distracting
-        website. Crossed 9,000+ users with 4++/5 ratings.
+        A browser extension to help people being mindful surfing the web.
+        Crossed 13,000+ users with 4.7/5 ratings. End-to-end development (Auth,
+        Database, Payment Processor - Stripe)
       </Text>
 
       {/* <Link
@@ -79,6 +88,19 @@ export default function Home(): ReactNode {
       </Text> */}
 
       <Link
+        href="https://github.com/umarluqman/dialisis.my"
+        isExternal
+        fontWeight="700"
+        fontSize="lg"
+      >
+        Dialysis.MY <ExternalLinkIcon mx="2px" mt={-1} />
+      </Link>
+      <Text mt={1} color={textColor} mb={10}>
+        Dialysis center directory in Malaysia. Leveraging programmatic SEO.
+        (Work in progress)
+      </Text>
+
+      <Link
         href="https://usrahdd.my/"
         isExternal
         fontWeight="700"
@@ -88,8 +110,8 @@ export default function Home(): ReactNode {
         <ExternalLinkIcon mx="2px" mt={-1} />
       </Link>
       <Text mt={1} color={textColor}>
-        Static landing Page for a mobile application, built with NextJS, Taiwind
-        & TypeScript, & Ghost Content API.
+        Static marketing landing page for a mobile application, built
+        TypeScript, & Ghost CMS.
       </Text>
     </chakra.div>
   );
