@@ -56,11 +56,11 @@ export default function Home(): ReactNode {
       </Link>
       <Text mt={1} color={textColor} mb={10}>
         A browser extension to help people being mindful surfing the web.
-        Crossed 13,000+ users with 4.7/5 ratings. End-to-end development (Auth,
+        Crossed 17,000+ users with 4.7/5 ratings. End-to-end development (Auth,
         Database, Payment Processor - Stripe)
       </Text>
 
-      {/* <Link
+      <Link
         href="https://github.com/umarluqman/geo-nft"
         isExternal
         fontWeight="700"
@@ -85,10 +85,10 @@ export default function Home(): ReactNode {
       </Link>
       <Text mt={1} color={textColor} mb={10}>
         Won 3rd place in Open Data Hackathon 2023 by Gitcoin.
-      </Text> */}
+      </Text>
 
       <Link
-        href="https://github.com/umarluqman/dialisis.my"
+        href="https://dialisis.my"
         isExternal
         fontWeight="700"
         fontSize="lg"
@@ -97,7 +97,6 @@ export default function Home(): ReactNode {
       </Link>
       <Text mt={1} color={textColor} mb={10}>
         Dialysis center directory in Malaysia. Leveraging programmatic SEO.
-        (Work in progress)
       </Text>
 
       <Link
